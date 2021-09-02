@@ -363,6 +363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RhythmMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322887, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: TestInput
+      value: 0:1.0 left;
+      objectReference: {fileID: 0}
     - target: {fileID: 3960036143472899879, guid: 93bfdee74b594f74584e3d5439bf1425,
         type: 3}
       propertyPath: Button
