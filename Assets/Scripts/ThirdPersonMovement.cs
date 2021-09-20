@@ -9,6 +9,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform GroundCheck;
     public LayerMask GroundMask;
     public float speed = 6f;
+    public float jump = 5f;
     public float turnSmoothTime = 0.1f;
     public float gravity = -9.81f;
     public float GroundDist = 0.2f;
@@ -39,6 +40,12 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jump * -2.0f * gravity);
+        }
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
