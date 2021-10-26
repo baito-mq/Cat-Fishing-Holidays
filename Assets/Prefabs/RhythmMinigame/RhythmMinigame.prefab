@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2514f28c40acd4e9e519663a28dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: 
+  Button: Down
   OuterImage: {fileID: 3960036144318664632}
   InnerImage: {fileID: 3960036144672236402}
   AssignedManager: {fileID: 3960036142725322887}
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2514f28c40acd4e9e519663a28dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: 
+  Button: Right
   OuterImage: {fileID: 3960036143636509801}
   InnerImage: {fileID: 3960036142799753580}
   AssignedManager: {fileID: 3960036142725322887}
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2514f28c40acd4e9e519663a28dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: 
+  Button: Up
   OuterImage: {fileID: 3960036144214895458}
   InnerImage: {fileID: 3960036143927218914}
   AssignedManager: {fileID: 3960036142725322887}
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2514f28c40acd4e9e519663a28dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: 
+  Button: Left
   OuterImage: {fileID: 3960036142805693963}
   InnerImage: {fileID: 3960036144438258562}
   AssignedManager: {fileID: 3960036142725322887}

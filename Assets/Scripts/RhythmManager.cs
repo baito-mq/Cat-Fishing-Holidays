@@ -30,7 +30,7 @@ public class RhythmManager : MonoBehaviour
 
     private int Score = 0;
     public float BPM { get; private set; } = 120f;
-    public float NoteSpeed { get; private set; } = 800f;
+    public float NoteSpeed = 800f;
 
     // Start is called before the first frame update
     void Start()
@@ -111,5 +111,12 @@ public class RhythmManager : MonoBehaviour
 
     public void PlayClick()
     {
+    }
+    public void SpawnRandom(){
+        Array dirs=Enum.GetValues(typeof(Direction));
+        for(int i=0;i<20;i++){
+            float position=0-(NoteSpeed+NoteSpeed*i);
+            SpawnArrow( (Direction)dirs.GetValue(UnityEngine.Random.Range(0,4)),position);
+        }
     }
 }

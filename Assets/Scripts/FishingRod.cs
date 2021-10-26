@@ -7,6 +7,8 @@ public class FishingRod : MonoBehaviour
     public BoxCollider WaterChecker;
     public LayerMask WaterLayer;
     public ThirdPersonMovement PlayerMovement;
+    public GameObject Camera;
+    public GameObject RhythmGamePrefab;
 
     private bool IsFishing = false;
 
@@ -32,6 +34,14 @@ public class FishingRod : MonoBehaviour
     {
         IsFishing = true;
         PlayerMovement.enabled = false;
+         GameObject clone = Object.Instantiate(RhythmGamePrefab);
+  clone.transform.position = new Vector3(1000, 0, 1000);
+  Camera.transform.position= clone.transform.position- new Vector3(0,-540,350);
+  Camera.transform.rotation= Quaternion.identity;
+  RhythmManager Anky=clone.GetComponent<RhythmManager>();
+  Anky.NoteSpeed= 400f;
+  Anky.SpawnRandom();
+
     }
 
     public void StopFishing()

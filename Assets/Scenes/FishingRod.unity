@@ -762,6 +762,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16
   PlayerMovement: {fileID: 1958659082}
+  Camera: {fileID: 689266425}
+  RhythmGamePrefab: {fileID: 3960036142725322881, guid: 93bfdee74b594f74584e3d5439bf1425,
+    type: 3}
 --- !u!1001 &2045707154
 PrefabInstance:
   m_ObjectHideFlags: 0
