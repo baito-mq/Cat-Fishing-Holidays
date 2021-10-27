@@ -305,6 +305,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -320,6 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -332,16 +342,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3960036142725322880, guid: 93bfdee74b594f74584e3d5439bf1425,
         type: 3}
@@ -362,6 +362,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RhythmMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322886, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322886, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 76a043d28ef09404b81886454929bc12, type: 3}
+    - target: {fileID: 3960036142725322886, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960036142725322886, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3960036142725322887, guid: 93bfdee74b594f74584e3d5439bf1425,
         type: 3}

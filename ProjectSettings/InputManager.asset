@@ -41,7 +41,7 @@ InputManager:
     m_Name: Fish
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: q
     positiveButton: e
     altNegativeButton: 
     altPositiveButton: 

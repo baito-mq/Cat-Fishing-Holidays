@@ -66,6 +66,7 @@ MonoBehaviour:
   Music: {fileID: 0}
   ScoreText: {fileID: 3960036144271886993}
   TestInput: 
+  NoteSpeed: 800
 --- !u!82 &3960036142725322886
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76,11 +77,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: adab539431105814a9e5690b340f55ab, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 76a043d28ef09404b81886454929bc12, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
