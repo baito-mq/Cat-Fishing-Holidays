@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3960036142725322880}
   - component: {fileID: 3960036142725322887}
   - component: {fileID: 3960036142725322886}
+  - component: {fileID: 7883284952621436948}
   m_Layer: 0
   m_Name: RhythmMinigame
   m_TagString: Untagged
@@ -163,6 +164,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7883284952621436948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960036142725322881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5475e744b1e049343a13da8eee2401fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 3960036142725322886}
+  otherClip1: {fileID: 8300000, guid: e8f8badf73acd4540bf8ca688a12298b, type: 3}
+  otherClip2: {fileID: 8300000, guid: 755781a5ddf1055418ca6f936b39e17a, type: 3}
+  otherClip3: {fileID: 8300000, guid: 28410c8a900ef2240833862fbef85552, type: 3}
+  musicVolume: 0
+  randomNum: 0
+  state: 0
 --- !u!1 &3960036142777521565
 GameObject:
   m_ObjectHideFlags: 0

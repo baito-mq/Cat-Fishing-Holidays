@@ -36,7 +36,7 @@ private Vector3 Cam1= new Vector3(11,6,-14);
 		Camera.transform.position= Cam1;//11,6,-14, 
 		Camera.transform.rotation= Quaternion.Euler(17,0,0);
 		StopFishing();
-		Destroy(clone);
+		DestroyImmediate(clone);
 	}
     }
 	}
@@ -44,7 +44,8 @@ private Vector3 Cam1= new Vector3(11,6,-14);
     {
         IsFishing = true;
         PlayerMovement.enabled = false;
-         GameObject clone = Object.Instantiate(RhythmGamePrefab);
+		   clone = Instantiate(RhythmGamePrefab) as GameObject;  
+        // GameObject clone = Object.Instantiate(RhythmGamePrefab);
   clone.transform.position = new Vector3(1000, 0, 1000);
   Camera.transform.position= clone.transform.position- new Vector3(0,-540,350);
   Camera.transform.rotation= Quaternion.identity;
