@@ -6,9 +6,9 @@ public class AudioRan
     public AudioClip otherClip1;
     public AudioClip otherClip2;
     public AudioClip otherClip3;
-    public float musicVolume;
-    public float randomNum;
-    public int state;
+    private float musicVolume;
+    private float randomNum;
+    private int state;
     // Use this for initialization
     void Start () {
         musicVolume = 0.5f;

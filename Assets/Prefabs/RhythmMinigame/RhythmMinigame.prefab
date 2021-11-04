@@ -78,7 +78,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 76a043d28ef09404b81886454929bc12, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -180,9 +180,6 @@ MonoBehaviour:
   otherClip1: {fileID: 8300000, guid: e8f8badf73acd4540bf8ca688a12298b, type: 3}
   otherClip2: {fileID: 8300000, guid: 755781a5ddf1055418ca6f936b39e17a, type: 3}
   otherClip3: {fileID: 8300000, guid: 28410c8a900ef2240833862fbef85552, type: 3}
-  musicVolume: 0
-  randomNum: 0
-  state: 0
 --- !u!1 &3960036142777521565
 GameObject:
   m_ObjectHideFlags: 0

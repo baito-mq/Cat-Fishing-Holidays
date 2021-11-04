@@ -408,5 +408,10 @@ PrefabInstance:
       propertyPath: Button
       value: Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7883284952621436948, guid: 93bfdee74b594f74584e3d5439bf1425,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bfdee74b594f74584e3d5439bf1425, type: 3}
