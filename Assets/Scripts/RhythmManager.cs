@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class RhythmManager : MonoBehaviour
 {
     [SerializeField]
@@ -23,15 +23,18 @@ public class RhythmManager : MonoBehaviour
     [SerializeField]
     private AudioSource Music;
     [SerializeField]
-    private TextMesh ScoreText;
+    public TextMesh ScoreText;
 
     [TextArea]
     public string TestInput;
-
-    private int Score = 0;
+private string result1 = "carp fish(low)";
+private string result2 = "gold fish(medium)";
+private string result3 = "shark(high)";
+public string result;
+    public int score = 0;
     public float BPM { get; private set; } = 120f;
     public float NoteSpeed = 800f;
-
+public Text fishresult;
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +70,10 @@ public class RhythmManager : MonoBehaviour
             SpawnArrow(pos, 0 - NoteSpeed * totalSeconds);
         }
     }
+void Update(){
+	result = score >= 5000 ? result3 : score >= 2000 ? result2 : result1;
+	
+}
 
     private void SpawnArrow(Direction direction, float position)
     {
@@ -103,10 +110,12 @@ public class RhythmManager : MonoBehaviour
         Up, Down, Left, Right
     }
 
-    public void AddScore(int score)
+    public void AddScore(int score2)
     {
-        Score += score;
-        ScoreText.text = $"Score: {Score}";
+        score += score2;
+		
+        ScoreText.text = result;
+		
     }
 
     public void PlayClick()
@@ -119,4 +128,11 @@ public class RhythmManager : MonoBehaviour
             SpawnArrow( (Direction)dirs.GetValue(UnityEngine.Random.Range(0,4)),position);
         }
     }
+	
+	private void OnDestroy()
+	{
+		Debug.Log(result);
+		GameObject.Find("Canvas/Panel/Latest fishing result").GetComponent<Text>().text = result;
+	}
+		
 }

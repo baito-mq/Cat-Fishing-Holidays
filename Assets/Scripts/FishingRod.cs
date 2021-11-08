@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class FishingRod : MonoBehaviour
 {
     public BoxCollider WaterChecker;
@@ -9,12 +10,26 @@ public class FishingRod : MonoBehaviour
     public ThirdPersonMovement PlayerMovement;
     public GameObject Camera;
     public GameObject RhythmGamePrefab;
-private GameObject clone;
+public GameObject clone;
+public GameObject Anky;
 private Vector3 Cam1= new Vector3(11,6,-14);
+public RhythmManager score; 
     private bool IsFishing = false;
+private float delay = 1;
+
+
+
 
     public void Update()
     {
+		
+		
+				
+		 if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Home)) 
+        { 
+              SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+        }  
+	
         if (Input.GetButtonDown("Fish"))// press E 
         {
             if (!IsFishing)// if it is not fishing
@@ -23,6 +38,7 @@ private Vector3 Cam1= new Vector3(11,6,-14);
                 if (value)//true
                 {
                     StartFishing();
+					
                 }
             } else//false
             {
@@ -35,12 +51,17 @@ private Vector3 Cam1= new Vector3(11,6,-14);
 		
 		Camera.transform.position= Cam1;//11,6,-14, 
 		Camera.transform.rotation= Quaternion.Euler(17,0,0);
+	
 		StopFishing();
 		DestroyImmediate(clone);
 	}
     }
 	}
-    public void StartFishing()
+    public void LateUpdate(){
+
+	}
+	
+	public void StartFishing()
     {
         IsFishing = true;
         PlayerMovement.enabled = false;
@@ -52,6 +73,7 @@ private Vector3 Cam1= new Vector3(11,6,-14);
   RhythmManager Anky=clone.GetComponent<RhythmManager>();
   Anky.NoteSpeed= 400f;
   Anky.SpawnRandom();
+
 Destroy(clone,15);
 
     }
@@ -66,4 +88,6 @@ Destroy(clone,15);
 		
 		
     }
+
+
 }
